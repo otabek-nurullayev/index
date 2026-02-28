@@ -176,8 +176,7 @@ font-size: 50px;
     color: #000000;
     letter-spacing: 1px;
     word-spacing: 4px;
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-        
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";  
     }
 .i-k-icon2{
 
@@ -208,7 +207,6 @@ font-size: 50px;
     height: 1100px;
     margin-top: -1000px;
     position: absolute;
-
 }
 .backgraund-fon2{
     display: inline-block;
@@ -217,7 +215,6 @@ font-size: 50px;
     height: 600px;
     display: flex;
     margin-top: -600px;
-
 }
 body{
     overflow-x: hidden;
@@ -230,5 +227,6 @@ body{
     background-color: rgba(237, 35, 159, 0.6);
     filter: blur(8px);
     border-radius: 4px;
-
 }
+
+
