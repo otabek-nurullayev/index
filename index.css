@@ -8,11 +8,24 @@ body{
 }
 .bosh-boshqaruvi{
     display: inline-block;
+    position: fixed;
+    border-radius: 20px;
+    box-shadow: 0 3px 16px 0 rgb(0 0 0 / 20%);
+    z-index: 3000;
+    width: 100%;
+    top: 20px;
+    left: 0;
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(15px);
 }
 .bosh-sarlavha-b{
     display: inline-block;
     padding: 10px;
     vertical-align: middle;
+    transition: 0.3s;
+}
+.bosh-sarlavha-b:hover{
+    transform: translateY(-5px);
 }
 .b-logo{
     display: inline-block;
@@ -28,7 +41,7 @@ body{
 }
 .bosh-sarlavha-b a:hover{
     color: hotpink;
-
+    transition: 0.3s;
 }
 .bosh-sarlavha-b.active a {
 color: hotpink;
@@ -56,13 +69,14 @@ color: hotpink;
 font-weight:100 ;
 }
 .i-k-icon{
+    display:block;
     width: 180px;
     height: 50px;
     border-radius: 7px;
     background: linear-gradient(45deg, #4f46e5, #ec4899);
     color: azure;
-  transition: 0.3s;
-  margin-top: 80px;
+  transition: 0.2s;
+  margin-top: 50px;
   border: solid white;
   cursor: pointer;
 }
@@ -70,7 +84,7 @@ font-weight:100 ;
 .i-k-icon:hover {
   transform: translateY(-5px);
   box-shadow: 0 10px 25px rgb(255, 255, 255);
-  color: #000000;
+  background: linear-gradient(45deg,#ec4899 , #4f46e5);
 }
 .main-section{
     margin-left: 300px;
@@ -131,12 +145,10 @@ background: linear-gradient(50deg, #4f46e5, #876383);
 margin: 100px;
 }
 .about-me-text{
-margin-top: 40px;
-margin-left: 1000px;
-text-transform: uppercase;
+    margin-left: 1000px;
+    text-transform: uppercase;
     letter-spacing: 2px;
     font-weight: 500;
-    position: relative;
     margin-bottom: 10px;
     color: #888;
 }
@@ -188,7 +200,7 @@ font-size: 50px;
   border-radius: 10px;
   background: linear-gradient(45deg, #4f46e5, #ec4899);
   color: azure;
-  transition: 0.3s;
+  transition: 0.2s;
   margin-top: 15px;
   margin-left: 1000px;
   border: solid white;
@@ -198,7 +210,7 @@ font-size: 50px;
 .i-k-icon2:hover{
   transform: translateY(-5px);
   box-shadow: 0 10px 25px rgb(255, 255, 255);
-  color: black;
+   background: linear-gradient(45deg,#ec4899 , #4f46e5);
 }
 .backgraund-fon{
     display: inline-block;
@@ -210,13 +222,13 @@ font-size: 50px;
 }
 .backgraund-fon2{
     display: inline-block;
-    margin-left: 300px;
-    width: 450px;
-    height: 400px;
+    margin-left: 270px;
+    width: 600px;
+    height: 600px;
     display: flex;
-    margin-top: -500px;
-    box-shadow: 0 0 8px black;
-    border-radius: 50%;
+    margin-top: -580px;
+    border-radius: 50px;
+    
 }
 body{
     overflow-x: hidden;
@@ -431,3 +443,245 @@ font-size: 30px;
         margin-top: -20px;
         color: #ffd804;
     }
+    .portfolio1-me-text{
+display: inline;
+}
+.portfolio1-me-text-b{
+     line-height: 60px;
+max-width: 500px;
+margin-left: 260px;
+
+font-size: 50px;
+    color: #000000;
+    letter-spacing: 1px;
+    word-spacing: 4px;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";  
+    }
+.blur-line-3{
+    display: inline-block;
+    margin-left: 5px;
+    width: 120px;
+    height: 10px;
+    background-color: rgba(237, 35, 159, 0.6);
+    filter: blur(8px);
+    border-radius: 4px;
+}
+.portfolio1-me-text{
+margin-top: 520px;
+margin-left: 300px;
+text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500;
+    position: relative;
+    margin-bottom: 10px;
+    color: #888;
+}
+.portfolio1{
+    margin-top: 450px;
+}
+/* From Uiverse.io by eslam-hany */ 
+.card-portfolio {
+    margin-left: 400px;
+  position: relative;
+  width: 420px;
+  height: 620px;
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  font-weight: bold;
+  border-radius: 15px;
+  cursor: pointer;
+    background-image: url(./img/p1.jpg);
+
+}
+
+.card-portfolio::before,
+.card-portfolio::after {
+  position: absolute;
+  content: "";
+  width: 20%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  font-weight: bold;
+  transition: all 0.5s;
+}
+
+.card-portfolio::before {
+  top: 0;
+  right: 0;
+  border-radius: 0 15px 0 100%;
+}
+
+.card-portfolio::after {
+  bottom: 0;
+  left: 0;
+  border-radius: 0 100%  0 15px;
+}
+
+.card-portfolio:hover::before,
+.card-portfolio:hover:after {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  transition: all 1s;
+   backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(150px);
+}
+/* From Uiverse.io by eslam-hany 2 */ 
+.card-portfolio2 {
+    top: -310px;
+    margin-left: 50px;
+  position: relative;
+  width: 570px;
+  height: 306px;
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  border-radius: 15px;
+  cursor: pointer;
+    background-image: url(./img/p4.jpg);
+}
+.card-portfolio2::before,
+.card-portfolio2::after {
+  position: absolute;
+  content: "";
+  width: 20%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  transition: all 0.5s;
+}
+
+.card-portfolio2::before {
+  top: 0;
+  right: 0;
+  border-radius: 0 15px 0 100%;
+}
+
+.card-portfolio2::after {
+  bottom: 0;
+  left: 0;
+  border-radius: 0 100%  0 15px;
+}
+
+.card-portfolio2:hover::before,
+.card-portfolio2:hover:after {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  transition: all 1s;
+   backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(150px);
+}
+
+
+/* From Uiverse.io by eslam-hany 2 */ 
+.card-portfolio3 {
+    top: 0px;
+    margin-left: -570px;
+  position: relative;
+  width: 261px;
+  height: 281px;
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  border-radius: 15px;
+  cursor: pointer;
+    background-image: url(./img/p2.jpg);
+
+}
+
+.card-portfolio3::before,
+.card-portfolio3::after {
+  position: absolute;
+  content: "";
+  width: 20%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  transition: all 0.5s;
+}
+
+.card-portfolio3::before {
+  top: 0;
+  right: 0;
+  border-radius: 0 15px 0 100%;
+}
+
+.card-portfolio3::after {
+  bottom: 0;
+  left: 0;
+  border-radius: 0 100%  0 15px;
+}
+
+.card-portfolio3:hover::before,
+.card-portfolio3:hover:after {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  transition: all 1s;
+   backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(150px);
+}
+
+/* From Uiverse.io by eslam-hany 2 */ 
+.card-portfolio4 {
+    top: 0px;
+    margin-left: 40px;
+  position: relative;
+  width: 261px;
+  height: 281px;
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  border-radius: 15px;
+  cursor: pointer;
+    background-image: url(./img/p3.jpg);
+
+}
+
+.card-portfolio4::before,
+.card-portfolio4::after {
+  position: absolute;
+  content: "";
+  width: 20%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  transition: all 0.5s;
+}
+
+.card-portfolio4::before {
+  top: 0;
+  right: 0;
+  border-radius: 0 15px 0 100%;
+}
+
+.card-portfolio4::after {
+  bottom: 0;
+  left: 0;
+  border-radius: 0 100%  0 15px;
+}
+
+.card-portfolio4:hover::before,
+.card-portfolio4:hover:after {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  transition: all 1s;
+   backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(150px);
+}
