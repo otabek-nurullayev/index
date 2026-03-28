@@ -4,13 +4,11 @@ body{
 
 .bosh-boshqaruvi{
     display: inline-block;
-    border-radius: 20px;
     z-index: 3000;
-    width: 100%;
-    top: 50px;
+    width: 90%;
 }
 .bosh-sarlavha-b{
-  margin-left: 150px;
+  margin-left: 130px;
     width: 1px;
     display: inline-block;
     transition: 0.3s;
@@ -20,15 +18,15 @@ body{
 }
 .b-logo{
     display: inline-block;
-    margin-left: 100px;
-    margin-top: 30px;
+    margin-left: 10px;
+    margin-top: 70px;
 }
 .bosh-sarlavha-b a{
     text-decoration: none;
     text-transform: uppercase;
     font-weight:bolder;
     font-size: 15px;
-    margin-left: 30px;
+    margin-left: 0px;
 }
 .bosh-sarlavha-b a:hover{
     color: hotpink;
